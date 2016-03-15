@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VCTransitions"
-  s.version      = "1.0.0"
+  s.version      = "0.0.1"
   s.summary      = "A sample tool to perform viewcontroller transition"
   s.description  = <<-DESC  
                        It is a sample uint used on iOS, which implement by Objective-C.  
@@ -63,11 +63,9 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "7.0"
-
+   s.ios.platform = :ios, '9.0'
   #  When using multiple platforms
-  # s.ios.deployment_target = "7.0"
+   s.ios.deployment_target = "7.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -90,7 +88,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  # s.source_files  = "Classes", "Classes/**/*.{h,m}"
+    s.source_files  = "VCTransition/*"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
